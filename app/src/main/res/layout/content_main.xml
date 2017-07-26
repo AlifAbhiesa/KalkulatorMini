@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.unixman.kalkulatormini.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="339dp"
+        android:layout_height="501dp"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <EditText
+            android:id="@+id/editAngka2"
+            android:layout_width="322dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editAngka1"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <Button
+            android:id="@+id/TombolKurang"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_alignBaseline="@+id/TombolTambah"
+            android:layout_alignBottom="@+id/TombolTambah"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/TombolTambah"
+            android:layout_toRightOf="@+id/TombolTambah"
+            android:onClick="klikKurang"
+            android:text="-"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <Button
+            android:id="@+id/TombolTambah"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_alignLeft="@+id/editAngka2"
+            android:layout_alignStart="@+id/editAngka2"
+            android:layout_below="@+id/editAngka2"
+            android:layout_marginTop="16dp"
+            android:onClick="klikTambah"
+            android:text="+"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <EditText
+            android:id="@+id/editAngka1"
+            android:layout_width="322dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/editAngka2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editAngka2"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <TextView
+            android:id="@+id/Hasil"
+            android:layout_width="275dp"
+            android:layout_height="43dp"
+            android:layout_alignLeft="@+id/TombolTambah"
+            android:layout_alignStart="@+id/TombolTambah"
+            android:layout_below="@+id/TombolKurang"
+            android:layout_marginTop="24dp"
+            android:text="0"
+            android:textSize="36sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="192dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
